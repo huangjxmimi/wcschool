@@ -6,82 +6,139 @@
     
     <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
     <link href="../resources/css/style.css"  type="text/css" rel="stylesheet"/>  
-<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-2.0.0.min.js"></script>
-<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/jquery-ui"></script>
-<link href="http://www.francescomalagrino.com/BootstrapPageGenerator/3/css/bootstrap-combined.min.css" rel="stylesheet" media="screen">
-<script type="text/javascript" src="http://www.francescomalagrino.com/BootstrapPageGenerator/3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+      <link rel="stylesheet" href="../resources/css/style.css">
+      <link rel="stylesheet" href="../resources/css/footer.css">
+      <link rel="stylesheet" href="../resources/css/fonts/font-awesome.css">
+
+      <script src="http://apps.bdimg.com/libs/jquery/2.0.0/jquery.min.js"></script>
+
+      <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+      <script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+      <script src="../resources/js/logincheck.js"></script>
 	</head>
 	<body >
-  <div class="header  ub ub-ae ub-ac ub-pc ub-img7  admin_header container-fluid">
-      
+  <div class="header  ub ub-ae ub-pc ub-img7  admin_header container-fluid">      
      <div class=" ub-f1 tx-metro"> <h4>欢迎使用瓦厂小学后台信息管理系统</h4></div>
-     <div class="ub-f1 ub"><i class="ub-f1 sc-tex-white">超级管理员</i>
-     	<i class="ub-f1 sc-tex-white">admin</i>
-  <div class="dropdown ub-f1">
-   <button type="button" class="admin_header_dropdown  dropdown-toggle" id="dropdownMenu1" 
-      data-toggle="dropdown">
-      
-      <span class="caret admin_header_dropdown"></span>
-   </button>
-   <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-      <li role="presentation">
-         <a role="menuitem" tabindex="-1" href="#">Java</a>
-      </li>
-      <li role="presentation">
-         <a role="menuitem" tabindex="-1" href="#">数据挖掘</a>
-      </li>
-      <li role="presentation">
-         <a role="menuitem" tabindex="-1" href="#">
-            数据通信/网络
-         </a>
-      </li>
-      <li role="presentation" class="divider"></li>
-      <li role="presentation">
-         <a role="menuitem" tabindex="-1" href="#">分离的链接</a>
-      </li>
-   </ul>
-</div>
-
+     <div class=" ub ub-ac">
+     	<div id="userstyle" class="ub-f1">超级管理员</div>
+     	<div id="userinfo" class="ub-f1 umar-l dropdown"">
+            <a href="#" class="dropdown-toggle admin_header_dropdown" data-toggle="dropdown">
+              admin
+               <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+               <li><a href="#">jmeter</a></li>
+               <li><a href="#">EJB</a></li>
+               <li><a href="#">Jasper Report</a></li>
+               <li class="divider"></li>
+               <li><a href="#">分离的链接</a></li>
+               <li class="divider"></li>
+               <li><a href="#">另一个分离的链接</a></li>
+            </ul>
+     	</div>
      </div>
-  </div>
-  <div style="height: 3em;"></div>
-	<div class="container-fluid">
-     		<div class="row">
-     			<div class="col-md-3">
-                   <ul class="nav nav-list well">
-				<li class="nav-header">
-					列表标题
-				</li>
-				<li class="active">
-					<a href="#">首页</a>
-				</li>
-				<li>
-					<a href="#">库</a>
-				</li>
-				<li>
-					<a href="#">应用</a>
-				</li>
-				<li class="nav-header">
-					功能列表
-				</li>
-				<li>
-					<a href="#">资料</a>
-				</li>
-				<li>
-					<a href="#">设置</a>
-				</li>
-				<li class="divider">
-				</li>
-				<li>
-					<a href="#">帮助</a>
-				</li>
-			</ul>
-     			</div>
-     			<div class="col-md-9">
-     				
-     			</div>
-     		</div>
-		</div>
+     <div style="width:15%;"></div>
+</div>
+<div class="row umar-a">
+	<div class="col-md-3" >
+       <ul id="accordion" class="uba border-list uc">
+       	<li class=" border-list ubb tx-c" data-toggle="collapse" data-parent="#accordion" 
+          href="#collapse1">
+       		<span  >新闻管理</span>
+           
+       	</li >
+       	   <div id="collapse1" class="panel-collapse collapse in ubb border-list">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+        vice lomo.
+      </div>
+    </div>
+       		<li class="ubb border-list tx-c"  data-toggle="collapse" data-parent="#accordion" 
+          href="#collapse2">
+       			<span >校务管理</span>
+       	
+       	</li>
+       		<div id="collapse2" class="panel-collapse collapse ubb border-list">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+        vice lomo.
+      </div>
+    </div>
+    <li class="ubb border-list tx-c"  data-toggle="collapse" data-parent="#accordion" 
+          href="#collapse3">
+       			<span >校务管理</span>
+       	
+       	</li>
+       		<div id="collapse3" class="panel-collapse collapse ubb border-list">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+        vice lomo.
+      </div>
+    </div>
+    <li class="ubb border-list tx-c"  data-toggle="collapse" data-parent="#accordion" 
+          href="#collapse4">
+       			<span >校务管理</span>
+       	
+       	</li>
+       		<div id="collapse4" class="panel-collapse collapse ubb border-list">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+        vice lomo.
+      </div>
+    </div>
+    <li class="ubb border-list tx-c"  data-toggle="collapse" data-parent="#accordion" 
+          href="#collapse5">
+       			<span >校务管理</span>
+       	
+       	</li>
+       		<div id="collapse5" class="panel-collapse collapse ubb border-list">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+        vice lomo.
+      </div>
+    </div>
+    <li class="ubb border-list tx-c"  data-toggle="collapse" data-parent="#accordion" 
+          href="#collapse6">
+       			<span >校务管理</span>
+       	
+       	</li>
+       		<div id="collapse6" class="panel-collapse collapse ubb border-list">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+        vice lomo.
+      </div>
+    </div>
+       		<li class="ubb border-list tx-c" data-toggle="collapse" data-parent="#accordion" 
+          href="#collapse7">
+       			<span  >新闻管理</span>      
+       	</li>
+       	 		<div id="collapse7" class="panel-collapse collapse ">
+      <div class="panel-body">
+        Nihil anim keffiyeh helvetica, craft beer labore wes anderson 
+        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher 
+        vice lomo.
+      </div>
+    </div>
+       </ul>
+       
+	</div>
+	<div class="col-md-9">
+	   <ul class="">
+ 
+</ul>
+	</div>
+</div>	
 	</body>
 	<script>
 		

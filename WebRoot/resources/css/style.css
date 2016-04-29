@@ -1131,15 +1131,38 @@ textarea
     margin-left: 2%;
     margin-right: 2%;
 }
-.admin_header
+.admin_header 
 {
 	background-image: url(res/admin_header.jpg);
-	min-height: 70px;
+	min-height: 100px;
+	color:white
+}
+.admin_header .a:hover
+{
+	color:white;
+	text-decoration: none;
+}
+.admin_header a:link
+{
+	color:white;
+	text-decoration: none;
 }
 .admin_header_dropdown
 {
 	border: 0px;
 	background: transparent;
 	color: white;
+}
+#accordion li
+{
+	padding-top:15px ;
+	padding-bottom:15px ;
+}
+#accordion li:hover
+{
+	padding-top:15px ;
+	padding-bottom:15px ;
+	background: #1FBAF3;
+	color:white
 }
 /*��ҳ����
